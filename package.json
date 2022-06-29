@@ -1,0 +1,37 @@
+{
+  "name": "reactory.github.io",
+  "description": "Website monorepo of @reactory.",
+  "version": "0.0.0-development",
+  "author": "Richard King <richrdkng@gmail.com> (www.richrdkng.com)",
+  "license": "ISC",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reactory/reactory.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/reactory/reactory.github.io/issues"
+  },
+  "homepage": "https://github.com/reactory/reactory.github.io#readme",
+  "keywords": [
+    "reactory",
+    "website"
+  ],
+  "engines": {
+    "node": ">=16.x"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "init": "npm i && lerna bootstrap",
+    "reinit": "npm run purge && npm run init",
+    "clear-build-files": "bash scripts/clear-build-files.sh",
+    "purge-dependency-caches": "bash scripts/purge-dependency-caches.sh",
+    "purge": "npm run clear-build-files && npm run purge-dependency-caches",
+    "check-updates": "lerna exec --concurrency 1 -- npx --yes npm-check-updates"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}

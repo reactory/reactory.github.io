@@ -1,0 +1,42 @@
+{
+  "name": "website",
+  "version": "0.0.0-development",
+  "description": "Website repository of @reactory.",
+  "author": "Richard King <richrdkng@gmail.com> (www.richrdkng.com)",
+  "license": "ISC",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reactory/reactory.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/reactory/reactory.github.io/issues"
+  },
+  "homepage": "https://github.com/reactory/reactory.github.io#readme",
+  "engines": {
+    "node": ">= 16"
+  },
+  "keywords": [
+    "website",
+    "internal"
+  ],
+  "scripts": {
+    "test": "echo \"WEBSITE TEST\""
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@tsconfig/node16": "^1.0.2",
+    "@types/jest": "^27.5.1",
+    "@types/node": "^16.11.1",
+    "jest": "^27.3.0",
+    "semantic-release": "^18.0.1",
+    "semantic-release-monorepo": "^7.0.5",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.8.0",
+    "tsconfig-paths": "^3.11.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.2"
+  }
+}
